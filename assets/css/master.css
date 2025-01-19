@@ -8444,6 +8444,9 @@ img {
  .hero-area-padding{
   padding-top: 150px;
   padding-bottom: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
  .hero-bottom-text-wrapper{
   display: flex;
