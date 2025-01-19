@@ -1421,6 +1421,16 @@
     </div>
   </div>
 
+  <div id="video-overlay" class="video-overlay">
+    <div class="video-popup">
+        <button id="close-video" class="close-video">&times;</button>
+        <video id="popup-video" controls>
+            <source src="https://cdn.shopify.com/videos/c/o/v/12994b388778480fa489c963b785a042.mp4" type="video/mp4">
+            <source src="https://cdn.prod.website-files.com/66a9bb7ee9e8df202fb86029%2F66a9e33ef916479f2f159414_6035859_Business_Office_1280x720-transcode.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
 
 
 
@@ -1566,6 +1576,26 @@
     menuToggle3.addEventListener('click', () => {
       menuToggle3.classList.remove('active-name');
     });
+  </script>
+
+  <script>
+      $(document).ready(function() {
+    $('.hero-fist-video').on('click', function() {
+      $('#video-overlay').css('display', 'block').animate({ opacity: 1 }, 300);
+      $('.video-popup').addClass('active');
+      $('#popup-video')[0].play();
+    });
+  
+    $('#close-video, #video-overlay').on('click', function(e) {
+      if (e.target !== this) return;
+      $('#video-overlay').animate({ opacity: 0 }, 300, function() {
+        $(this).css('display', 'none');
+      });
+      $('.video-popup').removeClass('active');
+      $('#popup-video')[0].pause();
+      $('#popup-video')[0].currentTime = 0;
+    });
+  });
   </script>
 
 </body>
