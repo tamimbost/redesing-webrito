@@ -8381,7 +8381,7 @@ img {
   }
 }
 
-.hero__title::after {
+/* .hero__title::after {
   position: absolute;
   content: "Pro";
   width: 70px;
@@ -8396,9 +8396,9 @@ img {
   color: var(--white);
   text-align: center;
   padding-top: 4px;
-}
+} */
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__title::after {
     right: -30px;
     top: 35px;
@@ -8424,12 +8424,84 @@ img {
     right: 0;
     top: -40px;
   }
+} */
+/* .tocker-changes{
+  white-space:pre;
 }
-
+.hero-title-sizing{
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 1;
+  color: var(--white);
+  margin-top: 55px;
+  position: relative;
+}
 .hero__title-wrapper {
   max-width: 990px;
   position: relative;
   margin-bottom: 105px;
+} */
+ .hero-area-padding{
+  padding-top: 150px;
+  padding-bottom: 150px;
+ }
+ .hero-bottom-text-wrapper{
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+  margin-top: 130px;
+ }
+ .hero-text-chenger .hero-text-chenger-inner h4{
+  color: #fff;
+  font-size: 120px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+ }
+ .hero-bottom-pera-text{
+  width: 40%;
+ }
+ .hero-bottom-pera-text .hero-bottom-pera-title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+ }
+ .hero-bottom-pera-text .hero-bottom-peragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFAF0;
+ }
+.hero-fist-video{
+  border-radius: 100px;
+  min-width: 255px;
+  height: 105px;
+}
+.hero-fist-video video{
+  object-fit: cover;
+  z-index: -100;
+  background-position: 50%;
+  background-size: cover;
+  width: 19%;
+  border-radius: 100px;
+  height: 84px;
+  margin: auto;
+  position: absolute;
+  top: 44%;
+}
+.hero-frist-title,
+.hero-frist-line-second-text{
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 1;
+  color: var(--white);
+  margin-top: 55px;
+  position: relative;
+}
+.hero-first-line-second-wrapper{
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -36627,18 +36699,7 @@ body {
   transform: scale(1.1);
   color: #007bff;
 }
-/* 
-.social-nav a:hover::before {
-  content: '';
-  position: absolute;
-  left: -12px;
-  right: -12px;
-  top: -8px;
-  bottom: -8px;
-  background: #f8f9fa;
-  border-radius: 20px;
-  z-index: -1;
-} */
+
 
 .get-off {
   writing-mode: vertical-lr;
