@@ -8449,7 +8449,7 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 100px;
-  margin-top: 130px;
+  margin-top: 110px;
  }
  .hero-text-chenger .hero-text-chenger-inner h4{
   color: #fff;
@@ -8477,27 +8477,40 @@ img {
   border-radius: 100px;
   min-width: 255px;
   height: 105px;
+  position: relative;
+  top: 17px;
+}
+.hero-text-wrapper{
+  @media (max-width:1550px){
+    position: relative;
+    left: 95px;
+  }
+}
+.text-strocks{
+  color: #fff0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }
 .hero-fist-video video{
   object-fit: cover;
   z-index: -100;
   background-position: 50%;
   background-size: cover;
-  width: 19%;
+  width: 100%;
   border-radius: 100px;
   height: 84px;
   margin: auto;
   position: absolute;
-  top: 44%;
+  top: 30%;
 }
 .hero-frist-title,
 .hero-frist-line-second-text{
-  font-weight: 500;
-  font-size: 150px;
-  line-height: 1;
+  font-weight: 800;
+  font-size: 120px;
   color: var(--white);
-  margin-top: 55px;
+  line-height: 130px;
   position: relative;
+  
 }
 .hero-first-line-second-wrapper{
   display: flex;
