@@ -161,13 +161,13 @@ body {
   width: auto !important;
 }
 
-.bg-img {
+/* .bg-img {
   background-position: center center;
   background-size: cover;
-}
+} */
 
 .gra-sticky-container {
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--gradient-color-one), var(--transparent) 34%);
+  /* background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--gradient-color-one), var(--transparent) 34%); */
   position: sticky;
   top: 190px;
 }
