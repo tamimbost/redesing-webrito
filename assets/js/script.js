@@ -32,6 +32,25 @@
         this.PhoneNumber();
         this.VideoPopupModel();
         this.TypingAnimationActivation();
+        this.SplitTextAnimation();
+      },
+      SplitTextAnimation: function (){
+        gsap.set(".experience", {
+          y: 50,
+          opacity: 0,
+        })
+        let homeAgency = gsap.timeline()
+      
+        // Charchater Come long Animation 
+        let hero__title = document.querySelector(".hero__title")
+        let split_hero__title = new SplitText(hero__title, { type: "chars" })
+        homeAgency.from(split_hero__title.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 });
+        homeAgency.to(".experience", {
+          y: 0,
+          opacity: 1,
+          duration: 2,
+          ease: "power2.out"
+        }, '-=1.5')
       },
       TypingAnimationActivation: function (){
         $(document).ready(() => {
