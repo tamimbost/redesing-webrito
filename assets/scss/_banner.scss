@@ -12,6 +12,7 @@
   @media screen and (max-width: 1199px) {
     padding: 150px 0;
   }
+
   @media screen and (max-width: 1024px) {
     padding: 150px 0 50px;
   }
@@ -595,6 +596,10 @@
   @media (max-width:1499px){
     gap: 50px;
   }
+  @media (max-width:885px){
+    display: block;
+    margin-top: 70px;
+  }
  }
  .hero-text-chenger .hero-text-chenger-inner h4{
   color: #fff;
@@ -609,6 +614,10 @@
  }
  .hero-bottom-pera-text{
   width: 38%;
+  @media (max-width:885px){
+    width: 100%;
+    text-align: center;
+  }
  }
  .hero-bottom-pera-text .hero-bottom-pera-title{
   font-size: 18px;
@@ -616,11 +625,20 @@
   color: #fff;
   margin-bottom: 10px;
   display: block;
+  @media (max-width:885px){
+    text-align: center;
+  }
  }
  .hero-bottom-pera-text .hero-bottom-peragraph {
   font-size: 16px;
   font-weight: 400;
   color: #FFFAF0;
+  @media (max-width:885px){
+    text-align: center;
+    br{
+      display: none;
+    }
+  }
  }
 .hero-fist-video{
   border-radius: 100px;
@@ -633,6 +651,9 @@
   @media (max-width:1550px){
     position: relative;
     left: 95px;
+  }
+  @media (max-width:991px){
+    left: 0;
   }
 }
 .text-strocks{
@@ -663,11 +684,17 @@
     font-size: 80px;
     line-height: 90px;
   }
+  @media (max-width:991px){
+    text-align: center;
+  }
   
 }
 .hero-first-line-second-wrapper{
   display: flex;
   align-items: center;
+  @media (max-width:991px){
+    justify-content: center;
+  }
 }
 
 
@@ -678,6 +705,9 @@
 .hero-text-chenger {
   text-align: center;
   width: 62%;
+  @media (max-width:885px){
+    width: 100%;
+  }
 }
 
 .hero-text-chenger-inner h4 {

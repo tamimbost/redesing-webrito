@@ -4483,6 +4483,12 @@ select:visited {
     gap: 50px;
   }
 }
+@media (max-width: 885px) {
+  .hero-bottom-text-wrapper {
+    display: block;
+    margin-top: 70px;
+  }
+}
 
 .hero-text-chenger .hero-text-chenger-inner h4 {
   color: #fff;
@@ -4500,6 +4506,12 @@ select:visited {
 .hero-bottom-pera-text {
   width: 38%;
 }
+@media (max-width: 885px) {
+  .hero-bottom-pera-text {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 .hero-bottom-pera-text .hero-bottom-pera-title {
   font-size: 18px;
@@ -4508,11 +4520,24 @@ select:visited {
   margin-bottom: 10px;
   display: block;
 }
+@media (max-width: 885px) {
+  .hero-bottom-pera-text .hero-bottom-pera-title {
+    text-align: center;
+  }
+}
 
 .hero-bottom-pera-text .hero-bottom-peragraph {
   font-size: 16px;
   font-weight: 400;
   color: #FFFAF0;
+}
+@media (max-width: 885px) {
+  .hero-bottom-pera-text .hero-bottom-peragraph {
+    text-align: center;
+  }
+  .hero-bottom-pera-text .hero-bottom-peragraph br {
+    display: none;
+  }
 }
 
 .hero-fist-video {
@@ -4527,6 +4552,11 @@ select:visited {
   .hero-text-wrapper {
     position: relative;
     left: 95px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-text-wrapper {
+    left: 0;
   }
 }
 
@@ -4564,16 +4594,32 @@ select:visited {
     line-height: 90px;
   }
 }
+@media (max-width: 991px) {
+  .hero-frist-title,
+  .hero-frist-line-second-text {
+    text-align: center;
+  }
+}
 
 .hero-first-line-second-wrapper {
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  .hero-first-line-second-wrapper {
+    justify-content: center;
+  }
 }
 
 /* Start Typing Effect Hero Area */
 .hero-text-chenger {
   text-align: center;
   width: 62%;
+}
+@media (max-width: 885px) {
+  .hero-text-chenger {
+    width: 100%;
+  }
 }
 
 .hero-text-chenger-inner h4 {
