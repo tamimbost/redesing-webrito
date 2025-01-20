@@ -49,7 +49,8 @@
           }
           &-sticky {
             display: block;
-            transform: scale(1);
+            transform: scale(1.6);
+            margin-left: 35px;
           }
         }
       }
@@ -87,7 +88,7 @@
     }
     .logo {
       &-default {
-        transform: scale(1);
+        transform: scale(1.6);
         height: 40px;
         transition: all 0.3s;
       }
@@ -157,7 +158,7 @@
     flex-wrap: wrap;
     gap: 10px 31px;
     background-color: $menu_bg_color;
-    padding: 8px;
+    padding: 18px 8px;
     border-radius: 8px;
     @media screen and (max-width: 1200px) {
       gap: 10px 20px;
