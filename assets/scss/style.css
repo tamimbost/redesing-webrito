@@ -2873,7 +2873,7 @@ select:visited {
   font-size: clamp(30px, 2.92vw, 60px);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--dark);
+  color: var(--white);
 }
 
 /*** Hover css ***/
@@ -7760,7 +7760,7 @@ select:visited {
   border-top-right-radius: 50px;
 }
 .footer_top_area {
-  padding: 160px 0;
+  padding: 60px 0;
 }
 @media screen and (max-width: 1440px) {
   .footer_top_area {
