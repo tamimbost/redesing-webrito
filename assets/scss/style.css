@@ -2866,7 +2866,7 @@ select:visited {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
-  color: var(--blue);
+  color: #f4f0ed;
 }
 .section_title .title {
   font-family: var(--Plus-Jakarta-Sans);
