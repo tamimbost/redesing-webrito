@@ -1,0 +1,290 @@
+/*** Header Call button ***/
+.header-call-button {
+  --button-effect-width: 64px;
+  --button-effect-height: 64px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: black;
+  --button-effect-hover-color: var(--white);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--blue);
+  --button-effect-scale-bg-border-radius: 8px;
+  display: inline-block;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+/*** header support button **/
+.header-support-button,
+.hover-blue-bg {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--white);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--blue);
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: $blue;
+  border: 2px solid $blue;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  color: $white !important;
+}
+.hover-blue-bg {
+  @media screen and (max-width: 575px) {
+    padding: 12px;
+    .button-effect {
+      display: none;
+    }
+  }
+}
+.header-support-button-2 {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--blue);
+  --button-effect-color: var(--white);
+  --button-effect-hover-color: var(--blue);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--white);
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: $white;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  color: $blue !important;
+}
+.hover-yellow-bg {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--blue);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--white);
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: $yellow;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: $dark !important;
+}
+.hover-dark-bg {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--blue);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--white);
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: $dark;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: $white !important;
+}
+/*** hover-white-bg-blue-border **/
+.hover-white-bg-blue-border {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--blue);
+  --button-effect-color: var(--white);
+  --button-effect-hover-color: var(--blue);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--white);
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: $white;
+  border: 2px solid $blue;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  color: $dark !important;
+  // &:hover {
+  //   background-color: $blue;
+  //   color: $white !important;
+  // }
+}
+.hover-white-bg-blue-border {
+  @media screen and (max-width: 575px) {
+    padding: 12px;
+    .button-effect {
+      display: none;
+    }
+  }
+}
+/*** hover-trans-bg-white-border **/
+.hover-trans-bg-white-border {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--blue);
+  --button-effect-border-width: 2px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 8px;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: transparent;
+  --button-effect-scale-bg-border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid $white;
+  border-radius: 8px;
+  padding: 12px 12px 12px 32px;
+  color: $white !important;
+}
+/* */
+.hover-utilize {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--white);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--white);
+  --button-effect-border-radius: 50%;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--blue);
+  --button-effect-scale-bg-border-radius: 8px;
+  font-family: $plus-jakarta-sans;
+  padding: 12px 32px 12px 12px;
+  border-radius: 37px;
+  background: #f4f0ed;
+  @media screen and (max-width: 1024px) and (min-width: 992px) {
+    padding: 12px;
+  }
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+}
+/*** brand_service_slider_hover **/
+.brand_service_slider_hover {
+  --button-effect-width: 114px;
+  --button-effect-height: 114px;
+  --button-effect-bg-color: var(--yellow);
+  --button-effect-color: var(--dark);
+  --button-effect-hover-color: var(--yellow);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--yellow);
+  --button-effect-border-radius: 50%;
+  --button-effect-icon-width: 1.5rem;
+  --button-effect-icon-height: 1.5rem;
+  --button-effect-scale-bg-color: var(--dark);
+  --button-effect-scale-bg-border-radius: 50%;
+  --button-effect-icon-diagonal-ps-before-hover: translate(-220%, 220%);
+  --button-effect-icon-diagonal-ps-after-hover: translate(220%, -220%);
+  font-family: $plus-jakarta-sans;
+  @media screen and (max-width: 1440px) {
+    --button-effect-width: 64px;
+    --button-effect-height: 64px;
+  }
+  // @media screen and (max-width: 1200px) {
+  //   --button-effect-width: 75px;
+  //   --button-effect-height: 75px;
+  // }
+  // @media screen and (max-width: 575px) {
+  //   --button-effect-width: 65px;
+  //   --button-effect-height: 65px;
+  // }
+  .flip-hover-wrap {
+    padding: 34px 56px 35px;
+    border-radius: 57px;
+    background-color: $yellow;
+    // font-size: 32px;
+    font-size: clamp(20px, 1.67vw, 35px);
+    font-weight: $fw_bold;
+    line-height: 44.8px;
+    color: $dark;
+    transition: all 0.4s;
+    @media screen and (max-width: 1440px) {
+      padding: 10px 40px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 10px 30px;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 10px 25px;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 20px 30px;
+      // font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  &:hover {
+    .flip-hover-wrap {
+      background-color: $dark;
+      .flip-hover {
+        div {
+          &:first-child {
+            color: $yellow !important;
+          }
+        }
+      }
+    }
+  }
+}
+/*** slick-project-arrow **/
+.slick-project-arrow {
+  --button-effect-width: 72px;
+  --button-effect-height: 72px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-border-width: 0px;
+  --button-effect-border-color: var(--yellow);
+  --button-effect-border-radius: 16px;
+  --button-effect-scale-bg-color: var(--blue);
+  --button-effect-scale-bg-border-radius: 16px;
+  --button-effect-icon-ps-before-hover: translate(-200%);
+  --button-effect-icon-ps-after-hover: translate(200%);
+  cursor: pointer;
+}
+/*** blog_btn_hover **/
+.blog_btn_hover {
+  --button-effect-width: 40px;
+  --button-effect-height: 40px;
+  --button-effect-bg-color: var(--white);
+  --button-effect-color: var(--blue);
+  --button-effect-hover-color: var(--white);
+  --button-effect-border-width: 1px;
+  --button-effect-border-color: var(--blue);
+  --button-effect-border-radius: 50%;
+  --button-effect-icon-width: 12px;
+  --button-effect-icon-height: 12px;
+  --button-effect-scale-bg-color: var(--blue);
+  --button-effect-scale-bg-border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  .flip-hover-wrap {
+    font-size: 18px;
+    font-weight: $fw_semiBold;
+    line-height: 28px;
+    color: $dark;
+  }
+}

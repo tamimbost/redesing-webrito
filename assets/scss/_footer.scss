@@ -1,0 +1,282 @@
+.footer {
+  &_bg {
+    background-color: $blue-dark;
+    padding-bottom: 24px;
+  }
+  &_top_area {
+    padding: 160px 0;
+    @media screen and (max-width: 1440px) {
+      padding: 100px 0;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 50px 0;
+    }
+  }
+  &_bottom {
+    &_area {
+      background-color: rgb(255 255 255 / 10%);
+      border-radius: 8px;
+      padding: 12px 12px 12px 30px;
+      @media screen and (max-width: 575px) {
+        padding: 12px;
+      }
+    }
+    &_menu {
+      display: flex;
+      align-items: center;
+      gap: 10px 64px;
+      flex-wrap: wrap;
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      a {
+        position: relative;
+        font-size: 16px;
+        font-weight: $fw_regular;
+        line-height: 24px;
+        color: rgb(255 255 255 / 70%);
+        transition: all 0.3s;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $white;
+          display: inline-block;
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+        }
+        &:hover {
+          span {
+            &:first-child {
+              color: $white;
+            }
+          }
+          &::before {
+            transform: scale(1);
+            transform-origin: bottom left;
+          }
+        }
+      }
+    }
+    &_right_content {
+      .title {
+        font-size: 16px;
+        font-weight: $fw_regular;
+        line-height: 24px;
+        color: rgb(255 255 255 / 70%);
+        @media screen and (max-width: 575px) {
+          text-align: center;
+        }
+        .link {
+          color: rgb(255 255 255 / 70%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &_left_content {
+    .title {
+      font-family: $plus-jakarta-sans;
+      // font-size: 80px;
+      font-size: clamp(30px, 4.12vw, 90px);
+      font-weight: $fw_bold;
+      line-height: 96px;
+      color: $white;
+      border-bottom: 1px solid $white;
+      padding-bottom: 48px;
+      margin-bottom: 59px;
+      @media screen and (max-width: 1582px) and (min-width: 992px) {
+        max-width: 750px;
+      }
+      @media screen and (max-width: 1199px) {
+        // font-size: 60px;
+        line-height: 66px;
+      }
+      @media screen and (max-width: 991px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 575px) {
+        // font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &_subscription_from {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+    .sTitle {
+      font-family: $plus-jakarta-sans;
+      font-size: 32px;
+      font-weight: $fw_bold;
+      line-height: 44.8px;
+      color: $white;
+      padding-bottom: 32px;
+      @media screen and (max-width: 1399px) {
+        font-size: 25px;
+        line-height: 35px;
+      }
+    }
+    .subscription_input_field {
+      position: relative;
+      max-width: 390px;
+      @media screen and (max-width: 991px) {
+        margin: 0 auto;
+      }
+      input {
+        width: 100%;
+        padding: 18px 24px 19px 24px;
+        border: 1px solid rgb(255 255 255 / 20%);
+        border-radius: 36px;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: rgb(255 255 255 / 70%);
+        @media screen and (max-width: 575px) {
+          border-radius: 16px 16px 0 0;
+        }
+        &:focus,
+        &::placeholder {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          color: rgb(255 255 255 / 70%);
+        }
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border: none;
+        border-radius: 36px;
+        padding: 0 24px;
+        background: $yellow;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        color: $dark;
+        @media screen and (max-width: 575px) {
+          width: 100%;
+          position: relative;
+          border-radius: 0 0 16px 16px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  &_menu {
+    li {
+      margin-bottom: 24px;
+      @media screen and (max-width: 575px) {
+        text-align: center;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 18px;
+        font-weight: $fw_regular;
+        line-height: 27px;
+        color: $white-70;
+        &:hover {
+          span {
+            &:first-child {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_right_area_content {
+    max-width: 490px;
+    margin: 0 auto;
+    @media screen and (min-width: 992px) {
+      margin-left: auto;
+    }
+  }
+  &_social_icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 32px;
+    padding-bottom: 73px;
+    @media screen and (max-width: 991px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 575px) {
+      gap: 10px;
+      padding-bottom: 30px;
+    }
+    li {
+      --button-effect-width: 72px;
+      --button-effect-height: 72px;
+      --button-effect-bg-color: var(--white);
+      --button-effect-color: var(--blue-dark);
+      --button-effect-hover-color: var(--dark);
+      --button-effect-border-color: var(--white);
+      --button-effect-border-hover-color: var(--yellow);
+      --button-effect-scale-bg-color: var(--yellow);
+      --button-effect-icon-ps-before-hover: translate(-220%);
+      --button-effect-icon-ps-after-hover: translate(220%);
+      .default-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+    }
+  }
+  &_contact_area {
+    h3 {
+      @media screen and (max-width: 991px) {
+        text-align: center;
+      }
+    }
+  }
+}
+.footer_contact_list {
+  .fs-24 {
+    font-size: 18px !important;
+  }
+  .link {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      display: inline-block;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.5s;
+      transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    }
+    &:hover {
+      &::before {
+        transform: scale(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+  .link,
+  .link a {
+    color: $white-70 !important;
+    transition: all 0.3s;
+    &:hover {
+      color: $white !important;
+    }
+  }
+}

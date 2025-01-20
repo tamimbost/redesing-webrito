@@ -1,0 +1,140 @@
+/*** Button Effect ***/
+.button-effect {
+  &-outer {
+    --button-effect-width: 3.5rem;
+    --button-effect-height: 3.5rem;
+    --button-effect-bg-color: white;
+    --button-effect-color: black;
+    --button-effect-hover-color: white;
+    --button-effect-border-width: 1px;
+    --button-effect-border-color: rgba(2, 2, 30, 0.3);
+    --button-effect-border-hover-color: rgba(2, 2, 30, 0);
+    --button-effect-border-radius: 50%;
+    --button-effect-icon-width: 1.5rem;
+    --button-effect-icon-height: 1.5rem;
+    --button-effect-scale-bg-color: black;
+    --button-effect-scale-bg-border-radius: 50%;
+    --button-effect-icon-ps-before-hover: translate(-180%);
+    --button-effect-icon-ps-after-hover: translate(180%);
+    --button-effect-icon-diagonal-ps-before-hover: translate(-180%, 180%);
+    --button-effect-icon-diagonal-ps-after-hover: translate(180%, -180%);
+    &.active,
+    &:hover {
+      .button-effect {
+        color: var(--button-effect-hover-color) !important;
+        border-color: var(--button-effect-border-hover-color);
+        .button-effect-bg {
+          transform: scale(1);
+        }
+        .button-icons {
+          transform: var(--button-effect-icon-ps-after-hover);
+          &.icon-is-diagonal-to-top {
+            transform: var(--button-effect-icon-diagonal-ps-after-hover);
+          }
+        }
+      }
+    }
+  }
+  width: var(--button-effect-width);
+  height: var(--button-effect-height);
+  color: var(--button-effect-color) !important;
+  border: var(--button-effect-border-width) solid var(--button-effect-border-color);
+  border-radius: var(--button-effect-border-radius);
+  background-color: var(--button-effect-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+  transform: translate(0);
+  &.is-left {
+    transform: rotate(-180deg);
+  }
+  .button-icons {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%);
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .default-icon {
+    z-index: 2;
+    width: var(--button-effect-icon-width);
+    height: var(--button-effect-icon-height);
+    line-height: 0;
+    position: relative;
+    &.icon-is-absolute {
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+      transform: var(--button-effect-icon-ps-before-hover);
+      &.icon-is-diagonal-to-top {
+        transform: var(--button-effect-icon-diagonal-ps-before-hover);
+      }
+    }
+  }
+  .button-effect-bg {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--button-effect-scale-bg-border-radius);
+    transition: all 0.3s;
+    transform: scale(0);
+    background-color: var(--button-effect-scale-bg-color);
+  }
+}
+/*** Flip Effect **/
+.flip {
+  &-hover {
+    position: relative;
+    > * {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      &:first-child {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: top;
+        transition-duration: 0.4s;
+        transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(0);
+      }
+      &:last-child {
+        display: inline-block;
+        transform-origin: bottom;
+        transition-duration: 0.3s;
+        transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+      }
+    }
+    &-wrap {
+      display: inline-block;
+    }
+    &-outer {
+      &.active,
+      &:hover {
+        .flip-hover {
+          > * {
+            &:first-child {
+              transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+            }
+            &:last-child {
+              transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

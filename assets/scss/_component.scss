@@ -1,0 +1,207 @@
+/*** List padding bottom ***/
+.wList {
+  &-pb {
+    &-16 {
+      li {
+        padding-bottom: 16px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-24 {
+      li {
+        padding-bottom: 24px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-32 {
+      li {
+        padding-bottom: 32px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &-mb {
+    &-32 {
+      li {
+        margin-bottom: 32px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+/*** Search One **/
+.search {
+  &-one {
+    position: relative;
+    input {
+      padding: 18px 74px 19px 24px;
+      background-color: $shade !important;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: $body-text;
+      &:focus,
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $body-text;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      width: 64px;
+      height: 100%;
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-two {
+    position: relative;
+    input {
+      padding: 22px 74px 23px 64px;
+      background-color: $white !important;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: $body-text;
+      &:focus,
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $body-text;
+      }
+      @media screen and (max-width: 575px) {
+        padding-left: 22px;
+        padding-right: 22px;
+        border-radius: 12px 12px 0 0;
+      }
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      border: none;
+      border-radius: 8px;
+      width: 56px;
+      height: 56px;
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 575px) {
+        position: relative;
+        top: 100%;
+        right: 0;
+        transform: translateY(0%);
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+      }
+    }
+    .img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 32px;
+      display: flex;
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+  }
+  &-three {
+    position: relative;
+    input {
+      padding: 25px 74px 25px 32px;
+      background-color: $shade !important;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      color: $dark;
+      &:focus,
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $dark;
+      }
+    }
+    button {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      border: none;
+      border-radius: 8px;
+      width: 56px;
+      height: 56px;
+      background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+/*** Pagination ***/
+.wPagination {
+  &-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #e5e7ed;
+      border-radius: 16px;
+      font-family: $plus-jakarta-sans;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      color: $dark;
+      transition: all 0.3s;
+      @media screen and (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      @media screen and (max-width: 575px) {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/*** Minimum width ***/
+$min-w-array: 0;
+@each $min in $min-w-array {
+  .min-w-#{$min} {
+    min-width: #{$min}px !important;
+  }
+}
+/*** Maximum width ***/
+$max-w-array: 146, 330, 382, 420, 421, 485, 936;
+@each $max in $max-w-array {
+  .max-w-#{$max} {
+    max-width: #{$max}px !important;
+  }
+}
+$max-sm-w-array: 146, 300;
+@each $max-sm in $max-sm-w-array {
+  .max-sm-w-#{$max-sm} {
+    @media screen and (min-width: 576px) {
+      max-width: #{$max-sm}px !important;
+    }
+  }
+}
+/*** Width ***/
+$w-array: 40, 56;
+@each $w in $w-array {
+  .w-#{$w} {
+    width: #{$w}px !important;
+  }
+}
+/*** Minimum Height ***/
+$min-h-array: 0;
+@each $min in $min-h-array {
+  .min-h-#{$min} {
+    min-height: #{$min}px !important;
+  }
+}
+/*** Maximum Height ***/
+$max-h-array: 0;
+@each $max in $max-h-array {
+  .max-h-#{$max} {
+    max-height: #{$max}px !important;
+  }
+}
+/*** Height ***/
+$h-array: 40, 56;
+@each $h in $h-array {
+  .h-#{$h} {
+    height: #{$h}px !important;
+  }
+}

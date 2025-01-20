@@ -1,0 +1,154 @@
+.counter_wrapper {
+  padding: 30px;
+  background: #f0eeff;
+  border: 3px solid #bfbbe4;
+  box-shadow: 5px 7px 0 #bfbbe4;
+  border-radius: 24px;
+  transition: 0.3s all;
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
+}
+.counter_content {
+  text-align: center;
+}
+.counter_wrap {
+  background: #5e43ff;
+  padding: 32px;
+  border-radius: 16px;
+  .row {
+    div {
+      &:last-child {
+        .single_counter_item {
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.single_counter_item {
+  position: relative;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    max-height: 96px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 47.92%, rgba(255, 255, 255, 0) 100%);
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 96px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 47.92%, rgba(255, 255, 255, 0) 100%);
+    @media screen and (min-width: 576px) {
+      display: none;
+    }
+  }
+}
+.single_counter_item h2 {
+  font-family: $hanken-grotesk;
+  // font-size: 64px;
+  font-size: clamp(35px, 3.33vw, 70px);
+  font-weight: 700;
+  line-height: 83px;
+  color: $white;
+  padding-bottom: 4px;
+  .counter_item.odometer.odometer-auto-theme {
+    font-family: $hanken-grotesk;
+  }
+  @media screen and (max-width: 1350px) {
+    // font-size: 55px;
+    line-height: 65px;
+  }
+  @media screen and (max-width: 575px) {
+    // font-size: 55px;
+    line-height: 45px;
+  }
+}
+.single_counter_item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: $white-70;
+  @media screen and (max-width: 1350px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+// .counter_content {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
+
+.counter_content h2 {
+  font-family: $plus-jakarta-sans;
+  // font-size: 56px;
+  font-size: clamp(25px, 2.91vw, 60px);
+  font-weight: 700;
+  line-height: 72px;
+  color: $dark;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  @media screen and (max-width: 1350px) {
+    // font-size: 33px;
+    line-height: 40px;
+  }
+  @media screen and (max-width: 575px) {
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+}
+.counter_content a {
+  position: relative;
+  font-family: $plus-jakarta-sans;
+  // font-size: 24px;
+  font-size: clamp(20px, 1.25vw, 30px);
+  font-weight: 600;
+  line-height: 36px;
+  color: $blue !important;
+  transition: 0.3s all;
+  text-decoration: underline;
+  transition: all 0.3s;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: $blue;
+    display: inline-block;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.14, 0, 0, 1.01);
+    width: 100%;
+  }
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+.counter_content a:hover {
+  color: var(--heading_color);
+}

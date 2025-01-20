@@ -1,0 +1,57 @@
+/*** Font Family ***/
+.hanken-grotesk {
+  font-family: var(--Hanken-Grotesk);
+}
+.plus-jakarta-sans {
+  font-family: var(--Plus-Jakarta-Sans);
+}
+/*** Font size ***/
+$fs-array: 0;
+@each $fs in $fs-array {
+  .fs-#{$fs} {
+    font-size: #{$fs}px !important;
+  }
+}
+$fs-sm-array: 0;
+@each $fs-sm in $fs-sm-array {
+  .fs-sm-#{$fs-sm} {
+    @media screen and (max-width: 575px) {
+      font-size: #{$fs-sm}px !important;
+    }
+  }
+}
+@for $fs from 10 through 30 {
+  .fs-#{$fs} {
+    font-size: #{$fs}px !important;
+  }
+}
+/*** Font weight ***/
+$fw-array: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $fw in $fw-array {
+  .fw-#{$fw} {
+    font-weight: #{$fw};
+  }
+}
+/*** Line Height ***/
+$lh-array: 36, 44, 48;
+@each $lh in $lh-array {
+  .lh-#{$lh} {
+    line-height: #{$lh}px !important;
+  }
+}
+@for $lh from 10 through 30 {
+  .lh-#{$lh} {
+    line-height: #{$lh}px !important;
+  }
+}
+/*** Letter Spacing ***/
+$ls-array: 1;
+@each $ls in $ls-array {
+  .ls-#{$ls} {
+    letter-spacing: #{$ls}px !important;
+  }
+}
+/*** text justify ***/
+.text-justify {
+  text-align: justify;
+}

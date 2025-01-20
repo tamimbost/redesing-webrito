@@ -1,0 +1,36 @@
+/*** Widths ***/
+@import "width";
+/*** Borders ***/
+@import "border";
+/*** Colors ***/
+@import "color";
+/*** Fonts ***/
+@import "fonts";
+/*** Gaps ***/
+@import "gap";
+/*** Margins ***/
+@import "margin";
+/*** Paddings ***/
+@import "padding";
+/*** z-index ***/
+@for $lh from 1 through 5 {
+  .z-index-#{$lh} {
+    z-index: $lh;
+  }
+}
+/*** Section Title ***/
+.section_title {
+  .subtitle {
+    font-size: 18px;
+    font-weight: $fw_semiBold;
+    line-height: 27px;
+    color: $blue;
+  }
+  .title {
+    font-family: $plus-jakarta-sans;
+    font-size: clamp(30px, 2.92vw, 60px);
+    font-weight: 700;
+    line-height: 1.25;
+    color: $dark;
+  }
+}

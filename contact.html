@@ -1,433 +1,726 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.svg" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Axtra HTML5 Template">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font awesome min CSS -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- Odometer css -->
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <!-- Slick css -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- Magnific Popup css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- AOS css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Phone number -->
+    <link rel="stylesheet" href="assets/css/intlTelInput.css" />
+    <!-- Main CSS -->
+    <link href="assets/scss/style.css" rel="stylesheet" />
 
-  <title>Contact - Axtra</title>
+    <title>Contact | Webrito</title>
+  </head>
 
-  <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- All CSS files -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/progressbar.css">
-  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-  <link rel="stylesheet" href="assets/css/master.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-<body class="dark">
-
-  <!-- Cursor Animation -->
-  <div class="cursor1"></div>
-  <div class="cursor2"></div>
-
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loading">
-      <div class="bar bar1"></div>
-      <div class="bar bar2"></div>
-      <div class="bar bar3"></div>
-      <div class="bar bar4"></div>
-      <div class="bar bar5"></div>
-      <div class="bar bar6"></div>
-      <div class="bar bar7"></div>
-      <div class="bar bar8"></div>
-    </div>
-  </div>
-
-
-
-
-
-  <!-- Scroll Smoother -->
-  <div class="has-smooth" id="has_smooth"></div>
-
-
-  <!-- Go Top Button -->
-  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
-
-
-  <!-- Header area start -->
-  <header class="header__area-7">
-    <div class="header__inner-2">
-      <div class="header__logo-2">
-        <a href="index.html" class="logo-dark"><img src="assets/imgs/logo/logo-black.png" alt="Site Logo"></a>
-        <a href="index.html" class="logo-light"><img src="assets/imgs/logo/webrito_main_logo.svg" alt="Site Logo"></a>
-      </div>
-      <div class="header__nav-2">
-        <ul class="main-menu-4 menu-anim">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">All Service</a>
-            <ul class="main-dropdown">
-              <li><a href="#">PSD to HTML</a></li>
-              <li><a href="#">Shopify to Store Development</a></li>
-              <li><a href="#">WordPress Store Development</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Expertise</a>
-            <ul class="main-dropdown">
-              <li><a href="#">Shopify Development</a></li>
-              <li><a href="#">Design to HTML</a></li>
-              <li><a href="#">WordPress Store Development</a></li>
-              <li><a href="#">UX Strategy & Design</a></li>
-            </ul>
-          </li>
-
-          <li><a href="#">Company</a>
-            <ul class="main-dropdown">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Portfolios</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Faq</a></li>
-        </ul>
-        <div class="lets-talk-btn">
-          <button class="talk-btn" type="submit">Let’s talk</button>
-          <canvas class="ball-line" id="animationCanvas"></canvas>
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="preloader">
+      <div class="vertical-centered-box">
+        <div class="content">
+          <div class="loader-circle"></div>
+          <div class="loader-line-mask">
+            <div class="loader-line"></div>
+          </div>
+          <img src="assets/img/logo/Logo.png" alt="" />
         </div>
       </div>
+    </div> -->
 
-      <div class="header__nav-icon-7">
-        <!-- <div class="open_offcanvas menu-icon-2" id="open_offcanvas">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div> -->
-        <button class="menu-icon-2" id="open_offcanvas"><img src="assets/imgs/icon/menu-dark.png"
-            alt="Menubar Icon"></button>
-      </div>
-    </div>
-  </header>
-  <!-- Header area end -->
-
-  <!-- Header area start -->
-  <header class="header__area">
-    <div class="header__inner">
-      <div class="header__nav-icon">
-        <button id="open_offcanvas"><img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
-      </div>
-      <div class="header__support">
-        <p>Support center <a href="tel:+9587325902">+9 587 325 902</a></p>
-      </div>
-    </div>
-  </header>
-  <!-- Header area end -->
-
-
-  <!-- Offcanvas area start -->
-  <div class="offcanvas__area">
-    <div class="offcanvas__body">
-      <div class="offcanvas__left">
-        <div class="offcanvas__logo">
-          <a href="index.html"><img src="assets/imgs/logo/site-logo-white-2.png" alt="Offcanvas Logo"></a>
-        </div>
-        <div class="offcanvas__social">
-          <h3 class="social-title">Follow Us</h3>
-          <ul>
-            <li><a href="#">Dribbble</a></li>
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">YouTube</a></li>
-          </ul>
-        </div>
-        <div class="offcanvas__links">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="blog.html">blog</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="offcanvas__mid">
-        <div class="offcanvas__menu-wrapper">
-          <nav class="offcanvas__menu">
-            <ul class="menu-anim">
-              <li><a href="#">Home</a></li>
-              <li>
-                <a>All Service</a>
-                <ul>
-                  <li><a href="#">PSD to HTML</a></li>
-                  <li><a href="#">Shopify to Store Development</a></li>
-                  <li><a href="#">WordPress Store Development</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a>Expertise</a>
-                <ul>
-                  <li><a href="#">Shopify Development</a></li>
-                  <li><a href="#">Design to HTML</a></li>
-                  <li><a href="#">WordPress Store Development</a></li>
-                  <li><a href="#">UX Strategy & Design</a></li>
-                </ul>
-              </li>
-
-              <li><a>Company</a>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Portfolios</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Faq</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="offcanvas__right">
-        <div class="offcanvas__search">
-          <form action="#">
-            <input type="text" name="search" placeholder="Search keyword">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-        <div class="offcanvas__contact">
-          <h3>Get in touch</h3>
-          <ul>
-            <li><a href="tel:02094980547">+(02) - 094 980 547</a></li>
-            <li><a href="mailto:info@extradesign.com">info@extradesign.com</a></li>
-            <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
-          </ul>
-        </div>
-        <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
-        <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
-      </div>
-      <div class="offcanvas__close">
-        <button type="button" id="close_offcanvas">
-          <div class="close-dot-1"></div>
-          <div class="close-dot-2"></div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <!-- Offcanvas area end -->
-
-
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main>
-
-        <!-- Contact area start -->
-        <section class="contact__area-6">
-          <div class="container g-0 line pt-120 pb-110">
-            <span class="line-3"></span>
-            <div class="row contact-items rg-20 justify-content-center">
-              <div class="col-lg-4 col-md-8">
-                <div class="single-contact-item contact-item-1">
-                  <div class="icon"><img src="#" alt=""></div>
-                  <div class="content-contact">
-                    <h3 class="title">Visit US</h3>
-                    <p class="info">1Ward no# 2, Holding no# 567-00, Sarkarpara, Government College Road, Satkhira 9400</p>
-                  </div>
+    <!-- Start Main Header & Banner -->
+    <header id="main-header" class="main-header main-header-2 bg-transparent">
+      <div class="menu-header">
+        <div class="top-header"></div>
+        <div class="container">
+          <div class="main-menu">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-2 col-md-4 col-sm-8 col-6">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/img/logo/Logo.png" alt="logo" class="logo-default" />
+                    <img src="assets/img/logo/Logo.png" alt="logo" class="logo-sticky" />
+                  </a>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-8">
-                <div class="contact-item contact-item-1">
-                  <div class="icon"><img src="#" alt=""></div>
-                  <div class="content-contact">
-                    <h3 class="title">Visit US</h3>
-                    <p class="info">1Ward no# 2, Holding no# 567-00, Sarkarpara, Government College Road, Satkhira 9400</p>
+              <div class="col-lg-7 col-md-8 col-sm-4 col-6">
+                <!--Main Menu-->
+                <div class="main-menu-navigation">
+                  <nav class="navigation-main-area">
+                    <ul>
+                      <li class="dropdown flip-hover-outer">
+                        <a href="index.html" class="flip-hover-wrap">
+                          <div class="flip-hover">
+                            <div>Home</div>
+                            <div>Home</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown flip-hover-outer">
+                        <a href="about.html" class="flip-hover-wrap">
+                          <div class="flip-hover">
+                            <div>About</div>
+                            <div>About</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown flip-hover-outer">
+                        <a href="#" class="flip-hover-wrap">
+                          <div class="flip-hover">
+                            <div>Expertise</div>
+                            <div>Expertise</div>
+                          </div>
+                        </a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="#">PSD To HTML</a></li>
+                          <li><a href="#">PSD To Shopify Conversion</a></li>
+                          <li><a href="#">Custom Shopify Theme Development</a></li>
+                          <li><a href="service.html">Service</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="portfolios.html">Portfolios</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown flip-hover-outer">
+                        <a href="#" class="flip-hover-wrap">
+                          <div class="flip-hover">
+                            <div>Company</div>
+                            <div>Company</div>
+                          </div>
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                          <div class="mega-menu-items">
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                            <a href="#" class="mega-menu-item">
+                              <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                              <div class="content">
+                                <h4 class="title">Menu Title hero_area</h4>
+                                <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropdown flip-hover-outer">
+                        <a href="faq.html" class="flip-hover-wrap">
+                          <div class="flip-hover">
+                            <div>FAQs</div>
+                            <div>FAQs</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Start Mobile Menu -->
+                <div class="mobile_menu position-relative">
+                  <div class="mobile_menu_button open_mobile_menu">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <div class="mobile_menu_wrap">
+                    <div class="mobile_menu_overlay open_mobile_menu"></div>
+                    <div class="mobile_menu_content">
+                      <div class="mobile_menu_close open_mobile_menu">
+                        <i class="fas fa-times"></i>
+                      </div>
+                      <div class="m-brand-logo">
+                        <a href="index.html"><img src="assets/img/logo/Logo.png" alt="" /></a>
+                      </div>
+                      <nav class="mobile-main-navigation clearfix ul-li">
+                        <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                          <li class="dropdown">
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="about.html">About</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#">Expertise</a>
+                            <ul class="dropdown-menu clearfix">
+                              <li><a href="#">PSD To HTML</a></li>
+                              <li><a href="#">PSD To Shopify Conversion</a></li>
+                              <li><a href="service.html">Service</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li><a href="portfolios.html">Portfolios</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#">Company</a>
+                            <ul class="dropdown-menu clearfix">
+                              <li class="mega-menu">
+                                <div class="mega-menu-items">
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                  <a href="#" class="mega-menu-item">
+                                    <div class="icon"><img src="assets/img/icon/feather.svg" alt="" /></div>
+                                    <div class="content">
+                                      <h4 class="title">Menu Title hero_area</h4>
+                                      <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo</p>
+                                    </div>
+                                  </a>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="faq.html">FAQs</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
                   </div>
                 </div>
+                <!-- End Mobile Menu -->
               </div>
-
-              <div class="col-lg-4 col-md-8">
-                <div class="contact-item contact-item-1">
-                  <div class="icon"><img src="#" alt=""></div>
-                  <div class="content-contact">
-                    <h3 class="title">Visit US</h3>
-                    <p class="info">1Ward no# 2, Holding no# 567-00, Sarkarpara, Government College Road, Satkhira 9400</p>
-                  </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="d-flex align-items-center justify-content-end g-16">
+                  <!--  -->
+                  <a href="contact.html" class="header-call-button button-effect-outer">
+                    <div class="button-effect">
+                      <div class="button-icons icon-is-diagonal-to-top">
+                        <div class="default-icon">
+                          <!-- <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3516 1.5C17.0526 1.911 19.9766 4.831 20.3916 8.532" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3516 5.04297C15.1226 5.38697 16.5066 6.77197 16.8516 8.54297" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0315 11.4724C14.0205 15.4604 14.9254 10.8467 17.4653 13.3848C19.9138 15.8328 21.3222 16.3232 18.2188 19.4247C17.8302 19.737 15.3613 23.4943 6.68447 14.8197C-1.99341 6.144 1.76157 3.67244 2.07394 3.28395C5.18377 0.173846 5.66682 1.58938 8.11539 4.03733C10.6541 6.5765 6.04254 7.48441 10.0315 11.4724Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg> -->
+                          <img src="assets/img/icon/call.gif" alt="" />
+                        </div>
+                        <div class="default-icon icon-is-absolute icon-is-diagonal-to-top">
+                          <!-- <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3516 1.5C17.0526 1.911 19.9766 4.831 20.3916 8.532" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3516 5.04297C15.1226 5.38697 16.5066 6.77197 16.8516 8.54297" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0315 11.4724C14.0205 15.4604 14.9254 10.8467 17.4653 13.3848C19.9138 15.8328 21.3222 16.3232 18.2188 19.4247C17.8302 19.737 15.3613 23.4943 6.68447 14.8197C-1.99341 6.144 1.76157 3.67244 2.07394 3.28395C5.18377 0.173846 5.66682 1.58938 8.11539 4.03733C10.6541 6.5765 6.04254 7.48441 10.0315 11.4724Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg> -->
+                          <img src="assets/img/icon/call.gif" alt="" />
+                        </div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </div>
+                  </a>
+                  <!--  -->
+                  <a href="#" class="d-flex align-items-center g-20 header-support-button flip-hover-outer button-effect-outer">
+                    <div class="flip-hover-wrap">
+                      <div class="flip-hover">
+                        <div>Support</div>
+                        <div>Support</div>
+                      </div>
+                    </div>
+                    <div class="button-effect">
+                      <div class="button-icons">
+                        <div class="default-icon">
+                          <svg viewBox="0 0 20 20" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.08464 15.8333H6.66797C3.33464 15.8333 1.66797 15 1.66797 10.8333V6.66663C1.66797 3.33329 3.33464 1.66663 6.66797 1.66663H13.3346C16.668 1.66663 18.3346 3.33329 18.3346 6.66663V10.8333C18.3346 14.1666 16.668 15.8333 13.3346 15.8333H12.918C12.6596 15.8333 12.4096 15.9583 12.2513 16.1666L11.0013 17.8333C10.4513 18.5666 9.5513 18.5666 9.0013 17.8333L7.7513 16.1666C7.61797 15.9833 7.30964 15.8333 7.08464 15.8333Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3301 9.16667H13.3375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99803 9.16667H10.0055" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66209 9.16667H6.66957" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="default-icon icon-is-absolute">
+                          <svg viewBox="0 0 20 20" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.08464 15.8333H6.66797C3.33464 15.8333 1.66797 15 1.66797 10.8333V6.66663C1.66797 3.33329 3.33464 1.66663 6.66797 1.66663H13.3346C16.668 1.66663 18.3346 3.33329 18.3346 6.66663V10.8333C18.3346 14.1666 16.668 15.8333 13.3346 15.8333H12.918C12.6596 15.8333 12.4096 15.9583 12.2513 16.1666L11.0013 17.8333C10.4513 18.5666 9.5513 18.5666 9.0013 17.8333L7.7513 16.1666C7.61797 15.9833 7.30964 15.8333 7.08464 15.8333Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.3301 9.16667H13.3375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99803 9.16667H10.0055" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66209 9.16667H6.66957" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
-      
             </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <div class="row">
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-title-2 animation__char_come">Let’s get in touch</h2>
-                </div>
-              </div>
-              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="contact__text">
-                  <p>Great! We're excited to hear from you and let's start
-                    something special togerter. call us for any inquery.</p>
-                </div>
+    <!-- Start Banner -->
+    <section class="banner-content-2 contact-banner">
+      <div class="container">
+        <div class="content wow animate__fadeInUp" data-wow-duration="1.5s">
+          <h3 class="title">Let's Connect</h3>
+          <p class="info">Leo in taciti conubia, arcu dapibus convallis commodo. Bibendum tristique lacus aenean quisque ut primis torquent dis eget</p>
+        </div>
+        <div class="img-1"><img src="assets/img/banner-2-graphic-1.png" alt="" /></div>
+        <div class="img-2"><img src="assets/img/banner-2-graphic-2.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Start contact -->
+    <section class="contact-item-section">
+      <div class="container">
+        <div class="row contact-items rg-20 justify-content-center">
+          <div class="col-lg-4 col-md-8">
+            <div class="contact-item contact-item-1 wow animate__fadeInUp" data-wow-duration="1.5s">
+              <div class="icon"><img src="assets/img/icon/calling.svg" alt="" /></div>
+              <div class="content">
+                <h3 class="title">Visit Us</h3>
+                <p class="info">11585 Jones Bridge Rd Ste 430, Johns Creek, GA 30022-7476</p>
               </div>
             </div>
-            <div class="row contact__btm">
-              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="contact__info">
-                  <h3 class="sub-title-anim-top animation__word_come">Don't be afraid man ! <br>say hello</h3>
-                  <ul>
-                    <li><a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a></li>
-                    <li><a href="mailto:hello@example.com">hello@example.com</a></li>
-                    <li><span>230 Norman Street New York, <br> QC (USA) H8R 1A1</span></li>
-                  </ul>
-                </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <div class="contact-item contact-item-2 wow animate__fadeInUp" data-wow-duration="1.8s">
+              <div class="icon"><img src="assets/img/icon/calling.svg" alt="" /></div>
+              <div class="content">
+                <h3 class="title">Call Us</h3>
+                <p class="info">+8801234567895</p>
+                <p class="info">+8801234567895</p>
               </div>
-              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                <div class="contact__form">
-                  <form action="assets/mail.php" method="POST">
-                    <div class="row g-3">
-                      <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="text" name="name" placeholder="Name *">
-                      </div>
-                      <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="email" name="email" placeholder="Email *">
-                      </div>
-                    </div>
-                    <div class="row g-3">
-                      <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="tel" name="phone" placeholder="Phone">
-                      </div>
-                      <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="text" name="subject" placeholder="Subject *">
-                      </div>
-                    </div>
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <textarea name="message" placeholder="Messages *"></textarea>
-                      </div>
-                    </div>
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <div class="btn_wrapper">
-                          <button class="wc-btn-primary btn-hover btn-item"><span></span> Send <br>Messages <i
-                              class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <div class="contact-item contact-item-3 wow animate__fadeInUp" data-wow-duration="2.1s">
+              <div class="icon"><img src="assets/img/icon/calling.svg" alt="" /></div>
+              <div class="content">
+                <h3 class="title">Email Us</h3>
+                <p class="info">hello@webrito.com</p>
+                <p class="info">hello@webrito.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- Start Form -->
+    <section class="overflow-x-hidden">
+      <div class="container">
+        <div class="contact-form wow animate__fadeInUp" data-wow-duration="2.2s">
+          <div class="row rg-24 pb-24">
+            <div class="col-xl-3 col-md-6">
+              <div class="sf-form-wrap sf-form-floating form-floating wow animate__fadeInUp" data-wow-duration="2.4s">
+                <input type="name" id="name" placeholder="name" />
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="sf-webrito-phoneNumber">
+                <input type="text" class="webrito-phoneNumber" placeholder="Phone Number" />
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="sf-form-wrap sf-form-floating form-floating wow animate__fadeInUp" data-wow-duration="2.4s">
+                <input type="email" id="email" placeholder="email" />
+                <label for="email">Email Address</label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="sf-single-file-upload wow animate__fadeInUp" data-wow-duration="2.7s">
+                <input type="file" class="fileInput" />
+                <button type="button" class="file-upload-button">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M10.0013 18.8337C14.6037 18.8337 18.3346 15.1027 18.3346 10.5003C18.3346 5.89795 14.6037 2.16699 10.0013 2.16699C5.39893 2.16699 1.66797 5.89795 1.66797 10.5003C1.66797 15.1027 5.39893 18.8337 10.0013 18.8337Z" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M13.3346 10.5003L10.0013 7.16699L6.66797 10.5003" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M10 13.8337V7.16699" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="file-upload-name">Drag & Drop or <span>choose files</span></p>
+                </button>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="sf-form-wrap sf-form-floating wow animate__fadeInUp" data-wow-duration="1.5s">
+                <textarea class="form-control" id="message" placeholder="message"></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+          </div>
+          <div class="row rg-20 justify-content-between">
+            <div class="col-xl-7">
+              <div class="form-check wForm_check wow animate__fadeInUp" data-wow-duration="1.5s">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label" for="flexCheckDefault">By submitting your request, you agree to our <a href="#" class="text-decoration-underline">Terms & Conditions</a>, accept our <a href="#" class="text-decoration-underline">Privacy Policy</a>, and permit the processing of your personal data.</label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+              <button class="contactButton flip-hover-outer wow animate__fadeInUp" data-wow-duration="2s">
+                <div class="flip-hover-wrap">
+                  <div class="flip-hover">
+                    <div>Send Your Message Now</div>
+                    <div>Send Your Message Now</div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Form -->
+
+    <!-- Start Footer -->
+    <footer class="footer_bg">
+      <div class="container">
+        <!-- Top -->
+        <div class="footer_top_area">
+          <div class="row justify-content-between rg-20">
+            <!-- Left -->
+            <div class="col-lg-7">
+              <div class="footer_left_content">
+                <h2 class="title wow animate__fadeInUp" data-wow-duration="1.5s">Want to Discuss About Your Next Project?</h2>
+                <div class="footer_left_bottom_content">
+                  <div class="row rg-20 justify-content-center">
+                    <div class="col-xl-6 col-md-6 col-sm-9">
+                      <div class="footer_subscription_from wow animate__fadeInUp" data-wow-duration="1.8s">
+                        <h2 class="sTitle">Subscribe Newsletter</h2>
+                        <div class="subscription_input_field">
+                          <input type="email" placeholder="hellomail@gmail.com" class="form-control" />
+                          <button class="flip-hover-outer">
+                            <div class="flip-hover-wrap">
+                              <div class="flip-hover">
+                                <div>Subscribe</div>
+                                <div>Subscribe</div>
+                              </div>
+                            </div>
+                          </button>
                         </div>
                       </div>
                     </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Contact area end -->
-
-      </main>
-
-
-    <!-- Footer area start -->
-      <footer class="footer__area_">
-        <div class="footer__top">
-          <div class="container footer-line"></div>
-          <img src="assets/imgs/thumb/footer.jpg" alt="Footer Image" data-speed="0.75">
-        </div>
-
-        <div class="footer__btm">
-          <div class="container">
-            <div class="row footer__row">
-              <div class="col-xxl-12">
-                <div class="footer__inner home-one-hero">
-                  <div class="footer__widget">
-                    <img class="footer__logo" src="assets/imgs/logo/webrito_main_logo.svg" alt="Footer Logo">
-                    <p>Want to Discuss About Your Next Project?
-                    </p>
-                    <ul class="footer__social">
-                      <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
-                      <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
-                      <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
-                      <li><a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
-                    </ul>
-                  </div>
-
-                  <div class="footer__widget-2">
-                    <h2 class="footer__widget-title">Information</h2>
-                    <ul class="footer__link">
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Portfolio</a></li>
-                      <li><a href="blog.html">Get in Touch</a></li>
-                    </ul>
-                  </div>
-
-                  
-
-                  <div class="footer__widget-3">
-                    <h2 class="footer__widget-title">Contact Us</h2>
-                    <ul class="footer__contact">
-                      <li>Ward no# 2, Holding no# 567-00, Sarkarpara, Government College Road, Satkhira 9400</li>
-                      <li><a href="tel:8801822050448" class="phone">+8801822050448
-                      </a></li>
-                      <li><a href="mailto:hello@webrito.com">hello@webrito.com</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="footer__widget-4">
-                    <h2 class="project-title">Have a project in your mind?</h2>
-                    <div class="btn_wrapper">
-                      <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span> contact us <i
-                          class="fa-solid fa-arrow-right"></i></a>
+                    <div class="col-xl-3 col-sm-4 col-md-3 col-6">
+                      <ul class="footer_menu wow animate__fadeInUp" data-wow-duration="2.1s">
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>About Us</span>
+                              <span>About Us</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>Blog</span>
+                              <span>Blog</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>Portfolio</span>
+                              <span>Portfolio</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>Get In Touch</span>
+                              <span>Get In Touch</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <h3 class="contact-time">09 : 00 AM - 10 : 30 PM</h3>
-                    <h4 class="contact-day">Saturday - Thursday</h4>
+                    <div class="col-xl-3 col-sm-4 col-md-3 col-6">
+                      <ul class="footer_menu max-sm-w-146 ms-md-auto wow animate__fadeInUp" data-wow-duration="2.4s">
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>PSD To HTML</span>
+                              <span>PSD To HTML</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>PSD to Shopify</span>
+                              <span>PSD to Shopify</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>PSD to WordPress</span>
+                              <span>PSD to WordPress</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="flip-hover-outer">
+                          <a href="" class="flip-hover-wrap">
+                            <div class="flip-hover">
+                              <span>UI/UX Design</span>
+                              <span>UI/UX Design</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-
-                  <div class="footer__copyright">
-                    <p>© 2022 - 2025 | Alrights reserved by <a href="#" target="_blank">Webrito</a>
-                    </p>
-                  </div>
-
-                  <div class="footer__subscribe">
-                    <form action="#">
-                      <input type="email" name="email" placeholder="Enter your email">
-                      <button type="submit" class="subs-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right -->
+            <div class="col-lg-5">
+              <div class="footer_right_area_content">
+                <!-- Social icon -->
+                <ul class="footer_social_icon wow animate__fadeInUp" data-wow-duration="2s">
+                  <li class="button-effect-outer">
+                    <a href="#" class="button-effect">
+                      <div class="button-icons">
+                        <div class="default-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="default-icon icon-is-absolute"><i class="fa-brands fa-facebook-f"></i></div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </a>
+                  </li>
+                  <li class="button-effect-outer">
+                    <a href="#" class="button-effect">
+                      <div class="button-icons">
+                        <div class="default-icon"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="default-icon icon-is-absolute"><i class="fa-brands fa-twitter"></i></div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </a>
+                  </li>
+                  <li class="button-effect-outer">
+                    <a href="#" class="button-effect">
+                      <div class="button-icons">
+                        <div class="default-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="default-icon icon-is-absolute"><i class="fa-brands fa-linkedin-in"></i></div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </a>
+                  </li>
+                  <li class="button-effect-outer">
+                    <a href="#" class="button-effect">
+                      <div class="button-icons">
+                        <div class="default-icon"><i class="fa-brands fa-slack"></i></div>
+                        <div class="default-icon icon-is-absolute"><i class="fa-brands fa-slack"></i></div>
+                      </div>
+                      <div class="button-effect-bg"></div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Contact area -->
+                <div class="footer_contact_area wow animate__fadeInUp" data-wow-duration="2.5s">
+                  <h3 class="fs-32 fw-700 lh-48 text-white pb-32 ff-Plus-Jakarta-Sans">Contact Us</h3>
+                  <!--  -->
+                  <ul class="wList-mb-32 footer_contact_list">
+                    <li class="button-effect-outer d-flex flex-row justify-content-start text-start justify-content-lg-start align-items-center g-20">
+                      <!-- Icon -->
+                      <div class="flex-shrink-0">
+                        <div class="button-effect">
+                          <div class="button-icons">
+                            <div class="default-icon">
+                              <svg viewBox="0 0 18 19" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.366 8.182C7.30434 9.83048 8.66952 11.1957 10.318 12.134L11.202 10.896C11.3442 10.6969 11.5543 10.5569 11.7928 10.5023C12.0313 10.4478 12.2814 10.4825 12.496 10.6C13.9103 11.3729 15.4722 11.8378 17.079 11.964C17.3298 11.9839 17.5638 12.0975 17.7345 12.2823C17.9052 12.4671 18 12.7094 18 12.961V17.423C18.0001 17.6706 17.9083 17.9094 17.7424 18.0932C17.5765 18.277 17.3483 18.3927 17.102 18.418C16.572 18.473 16.038 18.5 15.5 18.5C6.94 18.5 0 11.56 0 3C0 2.462 0.027 1.928 0.082 1.398C0.107255 1.1517 0.222984 0.923521 0.40679 0.757634C0.590595 0.591747 0.829406 0.499947 1.077 0.5H5.539C5.79056 0.499968 6.0329 0.594752 6.21768 0.765451C6.40247 0.93615 6.51613 1.17022 6.536 1.421C6.66222 3.02779 7.12708 4.58968 7.9 6.004C8.01746 6.21856 8.05221 6.46874 7.99767 6.7072C7.94312 6.94565 7.80306 7.15584 7.604 7.298L6.366 8.182ZM3.844 7.525L5.744 6.168C5.20478 5.00409 4.83535 3.76884 4.647 2.5H2.01C2.004 2.666 2.001 2.833 2.001 3C2 10.456 8.044 16.5 15.5 16.5C15.667 16.5 15.834 16.497 16 16.49V13.853C14.7312 13.6646 13.4959 13.2952 12.332 12.756L10.975 14.656C10.4287 14.4437 9.89801 14.1931 9.387 13.906L9.329 13.873C7.36758 12.7567 5.74328 11.1324 4.627 9.171L4.594 9.113C4.30691 8.60199 4.05628 8.07134 3.844 7.525Z" />
+                              </svg>
+                            </div>
+                            <div class="default-icon icon-is-absolute">
+                              <svg viewBox="0 0 18 19" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.366 8.182C7.30434 9.83048 8.66952 11.1957 10.318 12.134L11.202 10.896C11.3442 10.6969 11.5543 10.5569 11.7928 10.5023C12.0313 10.4478 12.2814 10.4825 12.496 10.6C13.9103 11.3729 15.4722 11.8378 17.079 11.964C17.3298 11.9839 17.5638 12.0975 17.7345 12.2823C17.9052 12.4671 18 12.7094 18 12.961V17.423C18.0001 17.6706 17.9083 17.9094 17.7424 18.0932C17.5765 18.277 17.3483 18.3927 17.102 18.418C16.572 18.473 16.038 18.5 15.5 18.5C6.94 18.5 0 11.56 0 3C0 2.462 0.027 1.928 0.082 1.398C0.107255 1.1517 0.222984 0.923521 0.40679 0.757634C0.590595 0.591747 0.829406 0.499947 1.077 0.5H5.539C5.79056 0.499968 6.0329 0.594752 6.21768 0.765451C6.40247 0.93615 6.51613 1.17022 6.536 1.421C6.66222 3.02779 7.12708 4.58968 7.9 6.004C8.01746 6.21856 8.05221 6.46874 7.99767 6.7072C7.94312 6.94565 7.80306 7.15584 7.604 7.298L6.366 8.182ZM3.844 7.525L5.744 6.168C5.20478 5.00409 4.83535 3.76884 4.647 2.5H2.01C2.004 2.666 2.001 2.833 2.001 3C2 10.456 8.044 16.5 15.5 16.5C15.667 16.5 15.834 16.497 16 16.49V13.853C14.7312 13.6646 13.4959 13.2952 12.332 12.756L10.975 14.656C10.4287 14.4437 9.89801 14.1931 9.387 13.906L9.329 13.873C7.36758 12.7567 5.74328 11.1324 4.627 9.171L4.594 9.113C4.30691 8.60199 4.05628 8.07134 3.844 7.525Z" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="button-effect-bg"></div>
+                        </div>
+                      </div>
+                      <!-- Text -->
+                      <div class="">
+                        <h4 class="fs-24 fw-700 lh-36 text-white ff-Plus-Jakarta-Sans">Call Us :</h4>
+                        <p class="fs-18 fw-400 lh-27 text-white link"><a href="tel:+8801822050448" class="text-white">+8801822050448</a> ( Call us from 08 am - 08 pm)</p>
+                      </div>
+                    </li>
+                    <li class="button-effect-outer d-flex flex-row justify-content-start text-start justify-content-lg-start align-items-center g-20">
+                      <!-- Icon -->
+                      <div class="flex-shrink-0">
+                        <div class="button-effect">
+                          <div class="button-icons">
+                            <div class="default-icon">
+                              <svg viewBox="0 0 20 19" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.5H19C19.2652 0.5 19.5196 0.605357 19.7071 0.792893C19.8946 0.98043 20 1.23478 20 1.5V17.5C20 17.7652 19.8946 18.0196 19.7071 18.2071C19.5196 18.3946 19.2652 18.5 19 18.5H1C0.734784 18.5 0.48043 18.3946 0.292893 18.2071C0.105357 18.0196 0 17.7652 0 17.5V1.5C0 1.23478 0.105357 0.98043 0.292893 0.792893C0.48043 0.605357 0.734784 0.5 1 0.5ZM18 4.738L10.072 11.838L2 4.716V16.5H18V4.738ZM2.511 2.5L10.061 9.162L17.502 2.5H2.511Z" />
+                              </svg>
+                            </div>
+                            <div class="default-icon icon-is-absolute">
+                              <svg viewBox="0 0 20 19" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.5H19C19.2652 0.5 19.5196 0.605357 19.7071 0.792893C19.8946 0.98043 20 1.23478 20 1.5V17.5C20 17.7652 19.8946 18.0196 19.7071 18.2071C19.5196 18.3946 19.2652 18.5 19 18.5H1C0.734784 18.5 0.48043 18.3946 0.292893 18.2071C0.105357 18.0196 0 17.7652 0 17.5V1.5C0 1.23478 0.105357 0.98043 0.292893 0.792893C0.48043 0.605357 0.734784 0.5 1 0.5ZM18 4.738L10.072 11.838L2 4.716V16.5H18V4.738ZM2.511 2.5L10.061 9.162L17.502 2.5H2.511Z" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="button-effect-bg"></div>
+                        </div>
+                      </div>
+                      <!-- Text -->
+                      <div class="">
+                        <h4 class="fs-24 fw-700 lh-36 text-white ff-Plus-Jakarta-Sans">Email :</h4>
+                        <a href="mailto:hello@webrito.com" class="fs-18 fw-400 lh-27 text-white link">Hello@webrito.com</a>
+                      </div>
+                    </li>
+                    <li class="button-effect-outer d-flex flex-row justify-content-start text-start justify-content-lg-start align-items-center g-20">
+                      <!-- Icon -->
+                      <div class="flex-shrink-0">
+                        <div class="button-effect">
+                          <div class="button-icons">
+                            <div class="default-icon">
+                              <svg viewBox="0 0 18 22" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18.8999L13.95 13.9499C14.9289 12.9709 15.5955 11.7236 15.8656 10.3658C16.1356 9.00795 15.9969 7.60052 15.4671 6.32148C14.9373 5.04244 14.04 3.94923 12.8889 3.18009C11.7378 2.41095 10.3844 2.00043 9 2.00043C7.61557 2.00043 6.26222 2.41095 5.11109 3.18009C3.95996 3.94923 3.06275 5.04244 2.53292 6.32148C2.00308 7.60052 1.86442 9.00795 2.13445 10.3658C2.40449 11.7236 3.07111 12.9709 4.05 13.9499L9 18.8999ZM9 21.7279L2.636 15.3639C1.37734 14.1052 0.520187 12.5016 0.172928 10.7558C-0.17433 9.00995 0.00390685 7.20035 0.685099 5.55582C1.36629 3.91129 2.51984 2.50569 3.99988 1.51677C5.47992 0.527838 7.21998 0 9 0C10.78 0 12.5201 0.527838 14.0001 1.51677C15.4802 2.50569 16.6337 3.91129 17.3149 5.55582C17.9961 7.20035 18.1743 9.00995 17.8271 10.7558C17.4798 12.5016 16.6227 14.1052 15.364 15.3639L9 21.7279ZM9 10.9999C9.53044 10.9999 10.0391 10.7892 10.4142 10.4141C10.7893 10.0391 11 9.53035 11 8.99992C11 8.46949 10.7893 7.96078 10.4142 7.58571C10.0391 7.21064 9.53044 6.99992 9 6.99992C8.46957 6.99992 7.96086 7.21064 7.58579 7.58571C7.21072 7.96078 7 8.46949 7 8.99992C7 9.53035 7.21072 10.0391 7.58579 10.4141C7.96086 10.7892 8.46957 10.9999 9 10.9999ZM9 12.9999C7.93914 12.9999 6.92172 12.5785 6.17158 11.8283C5.42143 11.0782 5 10.0608 5 8.99992C5 7.93906 5.42143 6.92164 6.17158 6.17149C6.92172 5.42135 7.93914 4.99992 9 4.99992C10.0609 4.99992 11.0783 5.42135 11.8284 6.17149C12.5786 6.92164 13 7.93906 13 8.99992C13 10.0608 12.5786 11.0782 11.8284 11.8283C11.0783 12.5785 10.0609 12.9999 9 12.9999Z" />
+                              </svg>
+                            </div>
+                            <div class="default-icon icon-is-absolute">
+                              <svg viewBox="0 0 18 22" fill="none" stroke="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18.8999L13.95 13.9499C14.9289 12.9709 15.5955 11.7236 15.8656 10.3658C16.1356 9.00795 15.9969 7.60052 15.4671 6.32148C14.9373 5.04244 14.04 3.94923 12.8889 3.18009C11.7378 2.41095 10.3844 2.00043 9 2.00043C7.61557 2.00043 6.26222 2.41095 5.11109 3.18009C3.95996 3.94923 3.06275 5.04244 2.53292 6.32148C2.00308 7.60052 1.86442 9.00795 2.13445 10.3658C2.40449 11.7236 3.07111 12.9709 4.05 13.9499L9 18.8999ZM9 21.7279L2.636 15.3639C1.37734 14.1052 0.520187 12.5016 0.172928 10.7558C-0.17433 9.00995 0.00390685 7.20035 0.685099 5.55582C1.36629 3.91129 2.51984 2.50569 3.99988 1.51677C5.47992 0.527838 7.21998 0 9 0C10.78 0 12.5201 0.527838 14.0001 1.51677C15.4802 2.50569 16.6337 3.91129 17.3149 5.55582C17.9961 7.20035 18.1743 9.00995 17.8271 10.7558C17.4798 12.5016 16.6227 14.1052 15.364 15.3639L9 21.7279ZM9 10.9999C9.53044 10.9999 10.0391 10.7892 10.4142 10.4141C10.7893 10.0391 11 9.53035 11 8.99992C11 8.46949 10.7893 7.96078 10.4142 7.58571C10.0391 7.21064 9.53044 6.99992 9 6.99992C8.46957 6.99992 7.96086 7.21064 7.58579 7.58571C7.21072 7.96078 7 8.46949 7 8.99992C7 9.53035 7.21072 10.0391 7.58579 10.4141C7.96086 10.7892 8.46957 10.9999 9 10.9999ZM9 12.9999C7.93914 12.9999 6.92172 12.5785 6.17158 11.8283C5.42143 11.0782 5 10.0608 5 8.99992C5 7.93906 5.42143 6.92164 6.17158 6.17149C6.92172 5.42135 7.93914 4.99992 9 4.99992C10.0609 4.99992 11.0783 5.42135 11.8284 6.17149C12.5786 6.92164 13 7.93906 13 8.99992C13 10.0608 12.5786 11.0782 11.8284 11.8283C11.0783 12.5785 10.0609 12.9999 9 12.9999Z" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="button-effect-bg"></div>
+                        </div>
+                      </div>
+                      <!-- Text -->
+                      <div class="">
+                        <h4 class="fs-24 fw-700 lh-30 text-white ff-Plus-Jakarta-Sans">11585 Jones Bridge Rd Ste 430, Johns Creek, GA 30022-7476</h4>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- Footer area end -->
+        <!-- Bottom -->
+        <div class="footer_bottom_area d-flex flex-column flex-lg-row justify-content-lg-between align-items-center flex-wrap g-20">
+          <!-- Left -->
+          <ul class="footer_bottom_menu">
+            <li class="flip-hover-outer">
+              <a href="" class="flip-hover-wrap">
+                <div class="flip-hover">
+                  <span>Terms and Conditions</span>
+                  <span>Terms and Conditions</span>
+                </div>
+              </a>
+            </li>
+            <li class="flip-hover-outer">
+              <a href="" class="flip-hover-wrap">
+                <div class="flip-hover">
+                  <span>Privacy Policy</span>
+                  <span>Privacy Policy</span>
+                </div>
+              </a>
+            </li>
+            <li class="flip-hover-outer">
+              <a href="" class="flip-hover-wrap">
+                <div class="flip-hover">
+                  <span>Refund Policy</span>
+                  <span>Refund Policy</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- Right -->
+          <div class="footer_bottom_right_content d-flex flex-column flex-lg-row justify-content-md-between align-items-center g-20">
+            <p class="title">2023 All Rights Reserved. <a href="#" class="link">Webrito</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-    </div>
-  </div>
-
-
-
-  <!-- All JS files -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/ScrollSmoother.min.js"></script>
-  <script src="assets/js/SplitText.min.js"></script>
-  <script src="assets/js/chroma.min.js"></script>
-  <script src="assets/js/mixitup.min.js"></script>
-  <script src="assets/js/vanilla-tilt.js"></script>
-  <script src="assets/js/jquery.meanmenu.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/appear-2.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/progressBar.min.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/intlTelInput-jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

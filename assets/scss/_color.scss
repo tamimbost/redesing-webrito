@@ -1,0 +1,51 @@
+/* Font Family */
+.ff-Hanken-Grotesk {
+  font-family: var(--Hanken-Grotesk);
+  font-family: var(--Plus-Jakarta-Sans);
+}
+.ff-Plus-Jakarta-Sans {
+  font-family: var(--Plus-Jakarta-Sans);
+}
+
+$theme-colors: (
+  "black": var(--black),
+  "white": var(--white),
+  "white-70": var(--white-70),
+  "dark": var(--dark),
+  "dark-50": var(--dark-50),
+  "blue": var(--blue),
+  "blue-dark": var(--blue-dark),
+  "primary-color": var(--primary-color),
+  "purple-shade": var(--purple-shade),
+  "body-text": var(--body-text),
+  "yellow": var(--yellow),
+  "green": var(--green),
+  "banner-bg": var(--banner-bg),
+  "shade": var(--shade),
+  "scrollbar-track": var(--scrollbar-track),
+  "scrollbar-thumb": var(--scrollbar-thumb),
+  "choose-bg-1": var(--choose-bg-1),
+  "choose-bg-2": var(--choose-bg-2),
+  "choose-bg-3": var(--choose-bg-3),
+  "choose-bg-4": var(--choose-bg-4),
+  "choose-bg-5": var(--choose-bg-5),
+  "choose-bg-6": var(--choose-bg-6),
+);
+/*** Text colors ***/
+@each $key, $color in $theme-colors {
+  .text-#{$key} {
+    color: $color !important;
+  }
+}
+/*** Background Color ***/
+@each $key, $color in $theme-colors {
+  .bg-#{$key} {
+    background-color: $color !important;
+  }
+}
+/*** Border Color ***/
+@each $key, $color in $theme-colors {
+  .bd-c-#{$key} {
+    border-color: $color !important;
+  }
+}

@@ -1,0 +1,106 @@
+.contact {
+  &-item {
+    &-section {
+      position: relative;
+      bottom: 115px;
+      z-index: 1;
+      @media screen and (max-width: 1440px) {
+        bottom: 100px;
+      }
+    }
+    padding: 40px;
+    border: 3px solid $white;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px 40px;
+    box-shadow: 0 0 0 0 $dark;
+    height: 100%;
+    transition: all 0.3s;
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 1300px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 575px) {
+      // flex-direction: column;
+      gap: 10px 20px;
+      padding: 20px;
+    }
+    .icon {
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+      background-color: $white;
+      box-shadow: 0px 12px 40px 0px #05021314;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      .title {
+        font-family: $plus-jakarta-sans;
+        // font-size: 40px;
+        font-size: clamp(25px, 2.08vw, 45px);
+        font-weight: 700;
+        line-height: 1.4;
+        color: $dark;
+        padding-bottom: 10px;
+      }
+      .info {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        color: $dark;
+      }
+    }
+    &-1 {
+      background-color: #ffecbc;
+      &:hover {
+        border-color: #f68187;
+        box-shadow: 9px 9px 0 0 #f68187;
+        @media screen and (max-width: 575px) {
+          box-shadow: 6px 6px 0 0 #f68187;
+        }
+      }
+    }
+    &-2 {
+      background-color: #d6f0fe;
+      &:hover {
+        border-color: #f68187;
+        box-shadow: 9px 9px 0 0 #f68187;
+        @media screen and (max-width: 575px) {
+          box-shadow: 6px 6px 0 0 #f68187;
+        }
+      }
+    }
+    &-3 {
+      background-color: #ffd6d8;
+      &:hover {
+        border-color: #f68187;
+        box-shadow: 9px 9px 0 0 #f68187;
+        @media screen and (max-width: 575px) {
+          box-shadow: 6px 6px 0 0 #f68187;
+        }
+      }
+    }
+  }
+  &-form {
+    padding: 48px;
+    border-radius: 16px;
+    background-color: $shade;
+    margin-bottom: 160px;
+    box-shadow: 16px 16px 0 0 #e0cab9;
+    @media screen and (max-width: 1540px) {
+      box-shadow: 13px 13px 0 0 #e0cab9;
+      margin: 0px 15px 100px;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 20px;
+    }
+  }
+  &-submit-btn {
+    box-shadow: 0px 12px 20px 0px #5e43ff4d;
+  }
+}
