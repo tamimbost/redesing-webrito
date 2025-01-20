@@ -40,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  color: var(--body-text);
+  color: var(--white);
   font-family: var(--Hanken-Grotesk);
   background-position: center center;
   background-repeat: no-repeat;
@@ -419,91 +419,91 @@ select:visited {
 
 /*** Text colors ***/
 .text-black {
-  color: var(--black) !important;
+  color: #fff;
 }
 
 .text-white {
-  color: var(--white) !important;
+  color: #fff;
 }
 
 .text-white-70 {
-  color: var(--white-70) !important;
+  color: #fff;
 }
 
 .text-dark {
-  color: var(--dark) !important;
+  color: #fff;
 }
 
 .text-dark-50 {
-  color: var(--dark-50) !important;
+  color: #fff;
 }
 
 .text-blue {
-  color: var(--blue) !important;
+  color: #fff;
 }
 
 .text-blue-dark {
-  color: var(--blue-dark) !important;
+  color: #fff;
 }
 
 .text-primary-color {
-  color: var(--primary-color) !important;
+  color: #fff;
 }
 
 .text-purple-shade {
-  color: var(--purple-shade) !important;
+  color: #fff;
 }
 
 .text-body-text {
-  color: var(--body-text) !important;
+  color: #fff;
 }
 
 .text-yellow {
-  color: var(--yellow) !important;
+  color: #fff;
 }
 
 .text-green {
-  color: var(--green) !important;
+  color: #fff;
 }
 
 .text-banner-bg {
-  color: var(--banner-bg) !important;
+  color: #fff;
 }
 
 .text-shade {
-  color: var(--shade) !important;
+  color: #fff;
 }
 
 .text-scrollbar-track {
-  color: var(--scrollbar-track) !important;
+  color: #fff;
 }
 
 .text-scrollbar-thumb {
-  color: var(--scrollbar-thumb) !important;
+  color: #fff;
 }
 
 .text-choose-bg-1 {
-  color: var(--choose-bg-1) !important;
+  color: #fff;
 }
 
 .text-choose-bg-2 {
-  color: var(--choose-bg-2) !important;
+  color: #fff;
 }
 
 .text-choose-bg-3 {
-  color: var(--choose-bg-3) !important;
+  color: #fff;
 }
 
 .text-choose-bg-4 {
-  color: var(--choose-bg-4) !important;
+  color: #fff;
 }
 
 .text-choose-bg-5 {
-  color: var(--choose-bg-5) !important;
+  color: #fff;
 }
 
 .text-choose-bg-6 {
-  color: var(--choose-bg-6) !important;
+  color: #fff;
 }
 
 /*** Background Color ***/
