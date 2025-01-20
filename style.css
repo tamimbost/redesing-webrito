@@ -2909,21 +2909,7 @@ html {
     margin-right: 30px;
   }
   
-  .our-serive-box-one {
-    z-index: 2;
-    grid-column-gap: 29px;
-    grid-row-gap: 29px;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    background-color: #0a0a0a99;
-    border: 1px solid #2f2f2f;
-    flex: 1;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-    padding: 50px 40px 30px 60px;
-    position: relative;
-  }
+  
   
   .our-serive-box-one.service-creative-box {
     flex-flow: column;

@@ -36807,3 +36807,51 @@ body {
 }
 
 /* End Video Overlay Popup Hero */
+
+/* Start Typing Effect Hero Area */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.hero-text-chenger {
+  text-align: center;
+}
+
+.hero-text-chenger-inner h4 {
+  font-size: 2em;
+  margin: 0;
+  padding: 20px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #000;
+  margin-left: 0.1rem;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #000;
+  }
+  49% {
+    background-color: #000;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+/* End Typing Effect Hero Area */

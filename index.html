@@ -278,7 +278,7 @@
   <!-- style="background-image: url(assets/imgs/bg/bg-1.png);" -->
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <main class="bg-img" style="background-image: url(assets/imgs/bg/hole1.png);">
+      <main class="bg-img" style="background-image: url(assets/imgs/bg/hole.png);">
         <section class="hero__area home-one-hero- hero-area-padding">
           <div class="container gra-sticky-container">
             <div class="row">
@@ -322,9 +322,9 @@
                   </div>
                   <div class="hero-text-chenger">
                     <div class="hero-text-chenger-inner">
-                      <h4> - Shopify</h4>
+                        <h4><span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
                     </div>
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -1603,6 +1603,47 @@
   });
   </script>
 
+  <script>
+    $(document).ready(() => {
+  const texts = ["Shopify", "WordPress", "UI/UX", "Webflow", "eCommerce"]
+  let count = 0
+  let index = 0
+  let currentText = ""
+  let letter = ""
+
+  function type() {
+    if (count === texts.length) {
+      count = 0
+    }
+    currentText = texts[count]
+    letter = currentText.slice(0, ++index)
+
+    $(".typed-text").text(letter)
+    if (letter.length === currentText.length) {
+      setTimeout(erase, 1000)
+    } else {
+      setTimeout(type, 100)
+    }
+  }
+
+  function erase() {
+    letter = currentText.slice(0, --index)
+    $(".typed-text").text(letter)
+    if (letter.length === 0) {
+      count++
+      index = 0
+      setTimeout(type, 500)
+    } else {
+      setTimeout(erase, 50)
+    }
+  }
+
+  setTimeout(type, 1000)
+})
+  </script>
+
 </body>
 
 </html>
+
+
