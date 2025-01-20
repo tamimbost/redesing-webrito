@@ -7756,6 +7756,8 @@ select:visited {
 .footer_bg {
   background-color: var(--blue-dark);
   padding-bottom: 24px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 .footer_top_area {
   padding: 160px 0;

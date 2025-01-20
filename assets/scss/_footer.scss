@@ -2,6 +2,8 @@
   &_bg {
     background-color: $blue-dark;
     padding-bottom: 24px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   &_top_area {
     padding: 160px 0;
