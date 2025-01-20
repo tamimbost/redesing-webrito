@@ -34,7 +34,7 @@ $theme-colors: (
 /*** Text colors ***/
 @each $key, $color in $theme-colors {
   .text-#{$key} {
-    color: #fff;
+    color: #dbdbdb;
   }
 }
 /*** Background Color ***/
