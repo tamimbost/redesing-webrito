@@ -1,41 +1,42 @@
-// .hero_area {
-//   // background-color: $banner-bg;
-//   padding: 237px 0 197px;
-//   margin-top: -96px;
-//   @media screen and (max-width: 1440px) {
-//     padding: 180px 0 150px;
-//   }
-//   @media screen and (max-width: 1300px) {
-//     padding: 180px 0 150px;
-//   }
-//   @media screen and (max-width: 1199px) {
-//     padding: 150px 0;
-//   }
-//   @media screen and (max-width: 1024px) {
-//     padding: 150px 0 50px;
-//   }
-//   @media screen and (max-width: 991px) {
-//     padding: 150px 0 170px;
-//   }
-//   @media screen and (max-width: 767px) {
-//     padding-bottom: 270px;
-//   }
-//   @media screen and (max-width: 575px) {
-//     padding: 137px 0 257px;
-//   }
-//   @media screen and (max-width: 500px) {
-//     padding-bottom: 197px;
-//   }
-//   @media screen and (max-width: 465px) {
-//     padding-bottom: 157px;
-//   }
-//   @media screen and (max-width: 435px) {
-//     padding-bottom: 127px;
-//   }
-//   @media screen and (max-width: 400px) {
-//     padding-bottom: 97px;
-//   }
-// }
+.hero_area {
+  // background-color: $banner-bg;
+  padding: 237px 0 197px;
+  margin-top: -96px;
+  height: 940px;
+  @media screen and (max-width: 1440px) {
+    padding: 180px 0 150px;
+  }
+  @media screen and (max-width: 1300px) {
+    padding: 180px 0 150px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 150px 0;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 150px 0 50px;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 150px 0 170px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 270px;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 137px 0 257px;
+  }
+  @media screen and (max-width: 500px) {
+    padding-bottom: 197px;
+  }
+  @media screen and (max-width: 465px) {
+    padding-bottom: 157px;
+  }
+  @media screen and (max-width: 435px) {
+    padding-bottom: 127px;
+  }
+  @media screen and (max-width: 400px) {
+    padding-bottom: 97px;
+  }
+}
 
 // .hero_content_left {
 //   .buttons {
@@ -589,7 +590,7 @@
 .hero-bottom-text-wrapper{
   display: flex;
   align-items: flex-start;
-  gap: 100px;
+  gap: 80px;
   margin-top: 110px;
  }
  .hero-text-chenger .hero-text-chenger-inner h4{
@@ -600,7 +601,7 @@
   text-transform: uppercase;
  }
  .hero-bottom-pera-text{
-  width: 40%;
+  width: 38%;
  }
  .hero-bottom-pera-text .hero-bottom-pera-title{
   font-size: 18px;
@@ -665,7 +666,7 @@
 
 .hero-text-chenger {
   text-align: center;
-  width: 60%;
+  width: 62%;
 }
 
 .hero-text-chenger-inner h4 {
@@ -674,31 +675,31 @@
   padding: 20px;
 }
 
-.cursor {
-  display: inline-block;
-  width: 3px;
-  background-color: #000;
-  margin-left: 0.1rem;
-  animation: blink 0.7s infinite;
-}
+// .cursor {
+//   display: inline-block;
+//   width: 3px;
+//   background-color: transparent;
+//   margin-left: 0.1rem;
+//   animation: blink 0.7s infinite;
+// }
 
-@keyframes blink {
-  0% {
-    background-color: #000;
-  }
-  49% {
-    background-color: #000;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #000;
-  }
-}
+// @keyframes blink {
+//   0% {
+//     background-color: #000;
+//   }
+//   49% {
+//     background-color: #000;
+//   }
+//   50% {
+//     background-color: transparent;
+//   }
+//   99% {
+//     background-color: transparent;
+//   }
+//   100% {
+//     background-color: #000;
+//   }
+// }
 /* End Typing Effect Hero Area */
 
 
