@@ -3146,7 +3146,7 @@ select:visited {
   flex-wrap: wrap;
   gap: 10px 31px;
   background-color: var(--white);
-  padding: 18px 8px;
+  padding: 10.5px 8px;
   border-radius: 8px;
 }
 @media screen and (max-width: 1200px) {
@@ -3596,7 +3596,7 @@ select:visited {
 /*** Header Call button ***/
 .header-call-button {
   --button-effect-width: 64px;
-  --button-effect-height: 64px;
+  --button-effect-height: 68px;
   --button-effect-bg-color: var(--white);
   --button-effect-color: black;
   --button-effect-hover-color: var(--white);
