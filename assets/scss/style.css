@@ -4478,6 +4478,11 @@ select:visited {
   gap: 80px;
   margin-top: 110px;
 }
+@media (max-width: 1499px) {
+  .hero-bottom-text-wrapper {
+    gap: 50px;
+  }
+}
 
 .hero-text-chenger .hero-text-chenger-inner h4 {
   color: #fff;
@@ -4485,6 +4490,11 @@ select:visited {
   font-weight: 500;
   font-style: italic;
   text-transform: uppercase;
+}
+@media (max-width: 1199px) {
+  .hero-text-chenger .hero-text-chenger-inner h4 {
+    font-size: 70px;
+  }
 }
 
 .hero-bottom-pera-text {
@@ -4546,6 +4556,13 @@ select:visited {
   color: var(--white);
   line-height: 130px;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .hero-frist-title,
+  .hero-frist-line-second-text {
+    font-size: 80px;
+    line-height: 90px;
+  }
 }
 
 .hero-first-line-second-wrapper {
