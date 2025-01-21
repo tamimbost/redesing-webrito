@@ -31,7 +31,7 @@
         this.Tools();
         this.PhoneNumber();
         this.VideoPopupModel();
-        this.TypingAnimationActivation();
+        // this.TypingAnimationActivation();
         this.SplitTextAnimationOne();
         this.TextAnimationTwo();
       },
@@ -74,44 +74,44 @@
           ease: "power2.out"
         }, '-=1.5')
       },
-      TypingAnimationActivation: function (){
-        $(document).ready(() => {
-          const texts = [" - Shopify", " - WordPress", " - UI/UX", " - Webflow"]
-          let count = 0
-          let index = 0
-          let currentText = ""
-          let letter = ""
+      // TypingAnimationActivation: function (){
+      //   $(document).ready(() => {
+      //     const texts = [" - Shopify", " - WordPress", " - UI/UX", " - Webflow"]
+      //     let count = 0
+      //     let index = 0
+      //     let currentText = ""
+      //     let letter = ""
         
-          function type() {
-            if (count === texts.length) {
-              count = 0
-            }
-            currentText = texts[count]
-            letter = currentText.slice(0, ++index)
+      //     function type() {
+      //       if (count === texts.length) {
+      //         count = 0
+      //       }
+      //       currentText = texts[count]
+      //       letter = currentText.slice(0, ++index)
         
-            $(".typed-text").text(letter)
-            if (letter.length === currentText.length) {
-              setTimeout(erase, 1000)
-            } else {
-              setTimeout(type, 100)
-            }
-          }
+      //       $(".typed-text").text(letter)
+      //       if (letter.length === currentText.length) {
+      //         setTimeout(erase, 1000)
+      //       } else {
+      //         setTimeout(type, 100)
+      //       }
+      //     }
         
-          function erase() {
-            letter = currentText.slice(0, --index)
-            $(".typed-text").text(letter)
-            if (letter.length === 0) {
-              count++
-              index = 0
-              setTimeout(type, 500)
-            } else {
-              setTimeout(erase, 50)
-            }
-          }
+      //     function erase() {
+      //       letter = currentText.slice(0, --index)
+      //       $(".typed-text").text(letter)
+      //       if (letter.length === 0) {
+      //         count++
+      //         index = 0
+      //         setTimeout(type, 500)
+      //       } else {
+      //         setTimeout(erase, 50)
+      //       }
+      //     }
         
-          setTimeout(type, 1000)
-        })
-      },
+      //     setTimeout(type, 1000)
+      //   })
+      // },
       VideoPopupModel: function (){
         $(document).ready(function() {
           $('.hero-fist-video').on('click', function() {
