@@ -775,3 +775,17 @@
 
 
 // End Hero Area
+.hero-container{
+  max-width: 1260px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width:991px){
+    max-width: 940px;
+  }
+  @media (max-width:767px){
+    max-width: none;
+  }
+}
