@@ -43,7 +43,7 @@ $theme-colors: (
     background-color: $color !important;
   }
 }
-/*** Border Color ***/
+/*** Border Color ***/   
 @each $key, $color in $theme-colors {
   .bd-c-#{$key} {
     border-color: $color !important;

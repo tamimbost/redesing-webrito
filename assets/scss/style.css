@@ -3061,6 +3061,12 @@ select:visited {
   transform: scale(1.6);
   margin-left: 35px;
 }
+@media (max-width: 1025px) {
+  .main-header.sticky-on .menu-header .main-menu .logo-sticky {
+    transform: scale(1);
+    margin-left: 0;
+  }
+}
 .main-header.sticky-on .navigation-main-area .dropdown .dropdown-menu {
   top: 60px;
 }
@@ -3094,6 +3100,13 @@ select:visited {
   transform: scale(1.6);
   height: 40px;
   transition: all 0.3s;
+  margin-left: 28px;
+}
+@media (max-width: 1024px) {
+  .menu-header .main-menu .logo-default {
+    transform: scale(1);
+    margin-left: 0;
+  }
 }
 .menu-header .main-menu .logo-sticky {
   display: none;
@@ -4293,59 +4306,17 @@ select:visited {
   margin-top: -96px;
   height: 940px;
 }
-@media screen and (max-width: 1440px) {
+@media (max-width: 1199px) {
   .hero_area {
-    padding: 180px 0 150px;
+    padding-top: 237px;
+    height: unset;
   }
 }
-@media screen and (max-width: 1300px) {
+@media (max-width: 767px) {
   .hero_area {
-    padding: 180px 0 150px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .hero_area {
-    padding: 150px 0;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .hero_area {
-    padding: 150px 0 50px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .hero_area {
-    padding: 150px 0 170px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .hero_area {
-    padding-bottom: 270px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .hero_area {
-    padding: 137px 0 257px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero_area {
-    padding-bottom: 197px;
-  }
-}
-@media screen and (max-width: 465px) {
-  .hero_area {
-    padding-bottom: 157px;
-  }
-}
-@media screen and (max-width: 435px) {
-  .hero_area {
-    padding-bottom: 127px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .hero_area {
-    padding-bottom: 97px;
+    padding-top: 160px;
+    height: 850px;
+    padding-bottom: 0;
   }
 }
 
@@ -4482,9 +4453,10 @@ select:visited {
 @media (max-width: 1499px) {
   .hero-bottom-text-wrapper {
     gap: 50px;
+    justify-content: space-between;
   }
 }
-@media (max-width: 885px) {
+@media (max-width: 991px) {
   .hero-bottom-text-wrapper {
     display: block;
     margin-top: 70px;
@@ -4498,19 +4470,28 @@ select:visited {
   font-style: italic;
   text-transform: uppercase;
 }
+@media (max-width: 1350px) {
+  .hero-text-chenger .hero-text-chenger-inner h4 {
+    font-size: 90px;
+  }
+}
 @media (max-width: 1199px) {
   .hero-text-chenger .hero-text-chenger-inner h4 {
     font-size: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-text-chenger .hero-text-chenger-inner h4 {
+    font-size: 45px;
   }
 }
 
 .hero-bottom-pera-text {
   width: 38%;
 }
-@media (max-width: 885px) {
+@media (max-width: 991px) {
   .hero-bottom-pera-text {
     width: 100%;
-    text-align: center;
   }
 }
 
@@ -4521,11 +4502,6 @@ select:visited {
   margin-bottom: 10px;
   display: block;
 }
-@media (max-width: 885px) {
-  .hero-bottom-pera-text .hero-bottom-pera-title {
-    text-align: center;
-  }
-}
 
 .hero-bottom-pera-text .hero-bottom-peragraph {
   font-size: 16px;
@@ -4533,9 +4509,6 @@ select:visited {
   color: #FFFAF0;
 }
 @media (max-width: 885px) {
-  .hero-bottom-pera-text .hero-bottom-peragraph {
-    text-align: center;
-  }
   .hero-bottom-pera-text .hero-bottom-peragraph br {
     display: none;
   }
@@ -4546,18 +4519,11 @@ select:visited {
   min-width: 255px;
   height: 105px;
   position: relative;
-  top: 17px;
-}
-
-@media (max-width: 1550px) {
-  .hero-text-wrapper {
-    position: relative;
-    left: 95px;
-  }
+  top: 5px;
 }
 @media (max-width: 991px) {
-  .hero-text-wrapper {
-    left: 0;
+  .hero-fist-video {
+    width: 255px;
   }
 }
 
@@ -4574,7 +4540,7 @@ select:visited {
   background-size: cover;
   width: 100%;
   border-radius: 100px;
-  height: 84px;
+  height: 105px;
   margin: auto;
   position: absolute;
   top: 30%;
@@ -4595,10 +4561,17 @@ select:visited {
     line-height: 90px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .hero-frist-title,
   .hero-frist-line-second-text {
-    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-frist-line-second-text {
+    margin-top: 15px;
   }
 }
 
@@ -4608,7 +4581,7 @@ select:visited {
 }
 @media (max-width: 991px) {
   .hero-first-line-second-wrapper {
-    justify-content: center;
+    display: block;
   }
 }
 
@@ -4617,16 +4590,12 @@ select:visited {
   text-align: center;
   width: 62%;
 }
-@media (max-width: 885px) {
+@media (max-width: 991px) {
   .hero-text-chenger {
     width: 100%;
+    text-align: left;
+    margin-top: 30px;
   }
-}
-
-.hero-text-chenger-inner h4 {
-  font-size: 2em;
-  margin: 0;
-  padding: 20px;
 }
 
 /* End Typing Effect Hero Area */
